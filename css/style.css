@@ -1,0 +1,389 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  word-spacing: 1px;
+  font-size: 14px;
+  line-height: 25px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+}
+h2 {
+  font-size: 40px;
+  line-height: 50px;
+}
+h3 {
+  font-size: 25px;
+  line-height: 30px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 22px;
+}
+li {
+  margin: 7px 0;
+}
+/* =================================================== */
+/* Layout */
+/* =================================================== */
+.btn {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.btn-download {
+  display: inline-block;
+  margin: 20px auto;
+  background-color: #23355B;
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+.btn-download:hover {
+  background-color: #fff;
+  color: #23355B;
+  text-decoration: none;
+}
+.btn-download img {
+  position: relative;
+  right: 10px;
+}
+/* =================================================== */
+/* Layout */
+/* =================================================== */
+.visible-md {
+  display: block;
+}
+.text-center {
+  text-align: center;
+}
+.section-title {
+  font-size: 30px;
+  line-height: 40px;
+  color: #23355B;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 50px;
+    margin: 20px 0 40px;
+  }
+}
+@media (min-width: 992px) {
+  .visible-md {
+    display: none;
+  }
+}
+/* =================================================== */
+/* Layout */
+/* =================================================== */
+section {
+  padding: 30px 0;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
+}
+@media (min-width: 992px) {
+  section {
+    padding: 100px 0;
+  }
+}
+/* =================================================== */
+/* Header */
+/* =================================================== */
+.header {
+  background-color: #028AD1;
+  padding-top: 20px;
+}
+.logo {
+  display: inline-block;
+}
+.menu {
+  float: right;
+  display: none;
+}
+.menu-item {
+  display: inline-block;
+}
+.menu-item a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0 10px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 20px;
+}
+.intro h1 {
+  font-size: 35px;
+  line-height: 50px;
+}
+.navbar-toggle {
+  display: inline-block;
+  border: 1px #fff solid;
+  background-color: transparent;
+  padding: 7px 10px;
+  border-radius: 5px;
+  float: right;
+}
+.icon-bar {
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+@media (min-width: 768px) {
+  .menu {
+    display: block;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .intro h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+/* =================================================== */
+/* Intro */
+/* =================================================== */
+.intro {
+  background-color: #028AD1;
+  background-image: url("../img/bg-top.png");
+  background-position: bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 20px 0 200px;
+  color: #fff;
+}
+.intro h1 {
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    padding: 100px 0 500px;
+  }
+  .intro .lead {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+/* =================================================== */
+/* Download it */
+/* =================================================== */
+.download-it {
+  padding-top: 0;
+}
+.download-it > .container {
+    margin-top: -50px;
+  }
+.download-list {
+  list-style-image: url(../img/check-icon.png);
+  padding-left: 20px;
+}
+.download-list li {
+  vertical-align: middle;
+  color: #93aac9;
+}
+@media (min-width: 768px) {
+  .download-it > .container {
+    margin-top: -100px;
+  }
+}
+@media (min-width: 992px) {
+  .download-it > .container {
+    background-image: url("../img/macbook.png");
+    background-position: bottom right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+/* =================================================== */
+/* App usage */
+/* =================================================== */
+.app-usage,
+.plans {
+  background-color: #F8F9FB;
+}
+.app-usage-icon {
+  float: left;
+  margin-right: 20px;
+}
+.app-usage-text {
+  overflow: hidden;
+}
+.app-usage-text h3 {
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #23355B;
+  margin-top: 0;
+}
+.app-usage [class^="col-"] {
+  margin: 20px 0;
+}
+@media (max-width: 991px) {
+  .feture-box {
+    margin: 30px 0;
+  }
+}
+/* =================================================== */
+/* Features */
+/* =================================================== */
+.feture-box h3 {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  color: #23355B;
+}
+
+@media (max-width: 991px) {
+  .feture-box {
+    margin: 30px 0;
+  }
+}
+@media (max-width: 767px) {
+  .feture-box {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .feture-box.left {
+    text-align: right;
+  }
+  
+}
+@media (min-width: 992px) {
+  .feture-box:first-child {
+    margin-bottom: 50px;
+  }
+  .features .section-title {
+    margin-bottom: 100px;
+  }
+}
+/* =================================================== */
+/* Plans */
+/* =================================================== */
+.pricing-table {
+  background-color: #fff;
+  padding: 30px;
+  margin: 10px 0;
+}
+.pricing-row-margin {
+  margin: 50px 0;
+}
+.plans h4 {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #23355B;
+}
+.price {
+  padding: 30px 0;
+}
+.price span {
+  font-size: 3em;
+  color: #23355B;
+  font-weight: 700;
+}
+
+.callcenter-info p {
+  margin: 10px 0;
+  font-weight: 700;
+  font-size: 1.2em;
+  vertical-align: middle;
+  color: #23355B;
+}
+.callcenter-info img {
+  width: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+@media (min-width: 992px) {
+  .callcenter-info {
+    margin-top: 50px;
+  }
+}
+/* =================================================== */
+/* Footer */
+/* =================================================== */
+.footer {
+  background-image: url("../img/bg-bottom.png");
+  background-position: bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+}
+@media (min-width: 420px) {
+  .footer {
+    padding-top: 250px;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-top: 400px;
+  }
+}
